@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8mz-QE-2Ms">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MTGCounter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Q-bO-Swj" customClass="ContentView" customModule="MTGCounter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="253" height="704"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SH-nr-aag" customClass="ContentView" customModule="MTGCounter" customModuleProvider="target">
+                                <rect key="frame" x="257" y="64" width="253" height="704"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5l1-hN-mLh" customClass="ContentView" customModule="MTGCounter" customModuleProvider="target">
+                                <rect key="frame" x="514" y="64" width="253" height="704"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSk-hU-ERG" customClass="ContentView" customModule="MTGCounter" customModuleProvider="target">
+                                <rect key="frame" x="771" y="64" width="253" height="704"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LSk-hU-ERG" firstAttribute="leading" secondItem="5l1-hN-mLh" secondAttribute="trailing" constant="4" id="1t3-eD-9Z5"/>
+                            <constraint firstItem="5l1-hN-mLh" firstAttribute="width" secondItem="2SH-nr-aag" secondAttribute="width" id="1xS-Mt-qYm"/>
+                            <constraint firstItem="5l1-hN-mLh" firstAttribute="height" secondItem="2SH-nr-aag" secondAttribute="height" id="7Pf-Sh-0MX"/>
+                            <constraint firstItem="LSk-hU-ERG" firstAttribute="centerY" secondItem="5l1-hN-mLh" secondAttribute="centerY" id="8K2-C0-Apa"/>
+                            <constraint firstItem="Q4Q-bO-Swj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.97" id="9ga-LG-2dy"/>
+                            <constraint firstItem="Q4Q-bO-Swj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.24" id="BrT-jJ-01o"/>
+                            <constraint firstItem="2SH-nr-aag" firstAttribute="width" secondItem="Q4Q-bO-Swj" secondAttribute="width" id="EQb-IM-ggX"/>
+                            <constraint firstItem="LSk-hU-ERG" firstAttribute="width" secondItem="5l1-hN-mLh" secondAttribute="width" id="VIc-Nh-YKo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LSk-hU-ERG" secondAttribute="trailing" constant="-20" id="WZE-hO-5DF"/>
+                            <constraint firstItem="5l1-hN-mLh" firstAttribute="leading" secondItem="2SH-nr-aag" secondAttribute="trailing" constant="4" id="ata-Wm-n6l"/>
+                            <constraint firstItem="5l1-hN-mLh" firstAttribute="centerY" secondItem="2SH-nr-aag" secondAttribute="centerY" id="d3H-Js-hZx"/>
+                            <constraint firstItem="Q4Q-bO-Swj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="flp-HW-ZN8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Q4Q-bO-Swj" secondAttribute="bottom" id="gtZ-Ru-eVi"/>
+                            <constraint firstItem="2SH-nr-aag" firstAttribute="leading" secondItem="Q4Q-bO-Swj" secondAttribute="trailing" constant="4" id="h1y-gi-CIE"/>
+                            <constraint firstItem="2SH-nr-aag" firstAttribute="height" secondItem="Q4Q-bO-Swj" secondAttribute="height" id="pUx-TL-Z97"/>
+                            <constraint firstItem="Q4Q-bO-Swj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qfd-3C-CAP"/>
+                            <constraint firstItem="LSk-hU-ERG" firstAttribute="height" secondItem="5l1-hN-mLh" secondAttribute="height" id="uLj-t8-zS7"/>
+                            <constraint firstItem="2SH-nr-aag" firstAttribute="centerY" secondItem="Q4Q-bO-Swj" secondAttribute="centerY" id="uLv-cJ-9mV"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9ga-LG-2dy"/>
+                                <exclude reference="BrT-jJ-01o"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="GDv-7n-D6a">
+                        <barButtonItem key="leftBarButtonItem" title="—" id="xWu-ek-x8e"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9I5-Z6-iLw"/>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <connections>
+                        <outlet property="playerFour" destination="LSk-hU-ERG" id="veZ-uA-o4f"/>
+                        <outlet property="playerOne" destination="Q4Q-bO-Swj" id="zBX-iO-X57"/>
+                        <outlet property="playerThree" destination="5l1-hN-mLh" id="sUJ-cV-a1J"/>
+                        <outlet property="playerTwo" destination="2SH-nr-aag" id="ihc-Rn-PX3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1263" y="638"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OPL-lh-5Ua">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8mz-QE-2Ms" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1024" height="768"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NUc-ed-n2W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Sjq-Ld-w6Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afp-3z-ZEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-69" y="628"/>
+        </scene>
+    </scenes>
+</document>
